@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# 🐍 Snake Game - Full Stack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um clássico Jogo da Cobrinha desenvolvido com arquitetura full-stack, featuring backend em Java Spring Boot e frontend em React.
 
-## Available Scripts
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![H2 Database](https://img.shields.io/badge/H2_Database-0078D4?style=for-the-badge)
 
-In the project directory, you can run:
+## 🎮 Sobre o Projeto
 
-### `npm start`
+Este projeto demonstra a integração entre backend Java com Spring Boot e frontend moderno com React, criando uma experiência completa de jogo com persistência de dados e ranking online.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ✨ Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **🎯 Jogo Clássico**: Cobrinha com movimentação por teclado
+- **🏆 Sistema de Ranking**: Salva e exibe os melhores scores
+- **⚡ API REST**: Backend robusto com endpoints RESTful
+- **🎨 Interface Moderna**: Design responsivo e intuitivo
+- **💾 Persistência**: Banco de dados H2 em memória
 
-### `npm test`
+## 🏗️ Arquitetura
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+snake-game/
 
-### `npm run build`
+├── 📁 backend/snake-game/ # Java Spring Boot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+│ ├── 📁 src/main/java/
+│ │ ├── controller/ScoreController.java
+│ │ ├── service/ScoreService.java
+│ │ ├── repository/ScoreRepository.java
+│ │ └── model/Score.java
+│ └── 📁 src/main/resources/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+│ └── application.properties
+├── 📁 src/ # React Frontend
+│ ├── components/GameBoard.js
+│ ├── services/api.js
+│ └── styles/Game.css
+└── 📄 package.json
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 🚀 Tecnologias Utilizadas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Backend
+- **Java 17** - Linguagem principal
+- **Spring Boot 3.4.10** - Framework backend
+- **Spring Data JPA** - Persistência de dados
+- **H2 Database** - Banco em memória
+- **Maven** - Gerenciamento de dependências
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Frontend
+- **React 18** - Biblioteca UI
+- **CSS3** - Estilização
+- **Fetch API** - Comunicação com backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Instalação e Execução
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Pré-requisitos
+- Java JDK 17+
+- Node.js 16+
+- Maven
 
-## Learn More
+### Executar Backend
+```bash
+cd backend/snake-game
+./mvnw spring-boot:run
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Executar Frontend
+```bash
+npm install
+npm start
+```
+---
+## 📡 API Endpoints
+Método	Endpoint	Descrição
+GET	/api/scores/leaderboard	Retorna top 10 scores
+POST	/api/scores	Salva novo score
+GET	/api/scores/player/{name}	Busca scores por jogador
+GET	/api/scores/test	Teste da API
+---
+## 🎯 Como Jogar
+Use as setas do teclado (↑ ↓ ← →) para controlar a cobrinha
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Colete a comida vermelha 🍎 para aumentar a pontuação
 
-### Code Splitting
+Evite bater nas paredes e no próprio corpo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+A velocidade aumenta a cada 50 pontos
 
-### Analyzing the Bundle Size
+Salve seu score no ranking ao final do jogo
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para:
 
-### Making a Progressive Web App
+Fork o projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Criar uma branch para sua feature (git checkout -b feature/AmazingFeature)
 
-### Advanced Configuration
+Commit suas mudanças (git commit -m 'Add some AmazingFeature')
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Push para a branch (git push origin feature/AmazingFeature)
 
-### Deployment
+Abrir um Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👨‍💻 Autor
+caioegc - GitHub
