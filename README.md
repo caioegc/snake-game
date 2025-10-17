@@ -1,11 +1,31 @@
 # 🐍 Snake Game - Full Stack
 
-Um clássico Jogo da Cobrinha desenvolvido com arquitetura full-stack, featuring backend em Java Spring Boot e frontend em React.
+Um clássico **Jogo da Cobrinha** desenvolvido com **arquitetura full-stack**, apresentando **backend em Java Spring Boot** e **frontend em React**.
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![H2 Database](https://img.shields.io/badge/H2_Database-0078D4?style=for-the-badge)
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+## 🧠 Back-end
+
+| Tecnologia | Descrição |
+| :--- | :--- |
+| ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) | **Linguagem principal** usada para implementar a lógica do servidor e regras do jogo. |
+| ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white) | Framework que fornece estrutura rápida e eficiente para o desenvolvimento do backend. |
+| ![H2 Database](https://img.shields.io/badge/H2_Database-0078D4?style=for-the-badge) | Banco de dados leve utilizado para armazenar pontuações e dados de jogadores. |
+
+---
+
+## 🎨 Front-end
+
+| Tecnologia | Descrição |
+| :--- | :--- |
+| ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) | Biblioteca JavaScript utilizada para construir a interface interativa do jogo. |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | Linguagem responsável pela lógica do jogo e comunicação com o backend. |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) | Responsável pelo design e estilo visual do tabuleiro e elementos do jogo. |
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) | Estrutura base da aplicação web. |
+
+---
 
 ## 🎮 Sobre o Projeto
 
